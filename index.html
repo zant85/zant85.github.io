@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="断路器附件专业导购与选型指南。提供辅助触头、储能弹簧、分合闸线圈、辅助开关、欠压脱扣器、辅助继电器等配电附件的型号对照、功能原理及安装维护说明，助力电气工程师精准选型。">
+    <meta name="keywords" content="断路器附件, 辅助触头, 储能弹簧, 分合闸线圈, 欠压脱扣器, 低压电器, 电气配件">
+    <title>断路器附件-专业电气配件选型与维护指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004494;
+            --accent-color: #f39c12;
+            --text-color: #333333;
+            --text-light: #666666;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --white: #ffffff;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .search-box {
+            background: var(--white);
+            padding: 0.5rem;
+            border-radius: 50px;
+            display: inline-flex;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            outline: none;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .search-box button {
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 0 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        /* Section Styles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* Category Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .category-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            border-color: var(--primary-color);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .category-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .category-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .article-card {
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-card:last-child {
+            border-bottom: none;
+        }
+
+        .article-thumb {
+            width: 240px;
+            height: 160px;
+            background-color: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .article-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .article-content h3 a:hover {
+            color: var(--primary-color);
+        }
+
+        .article-content p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .sidebar {
+            background-color: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .sidebar h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar-list a {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            background-color: var(--bg-light);
+            padding: 3rem 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 3rem 1rem;
+        }
+
+        .footer-content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            color: var(--white);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #95a5a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                margin: 1rem 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-card {
+                flex-direction: column;
+            }
+
+            .article-thumb {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+                电配通 <span>电气配件专业平台</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">配件分类</a></li>
+                    <li><a href="#">选型指南</a></li>
+                    <li><a href="#">安装维护</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-button">免费选型咨询</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>断路器附件专业选型与维护指南</h1>
+            <p>一站式了解辅助触头、分合闸线圈、储能机构等核心配件。为您提供精准的型号对照、安装参数及故障排查方案，保障低压配电系统安全稳定运行。</p>
+            <form class="search-box" onsubmit="event.preventDefault(); alert('选型查询功能演示：请输入具体型号或品牌。');">
+                <input type="text" placeholder="输入型号（如：3TB47, TC25）或配件名称...">
+                <button type="submit">查询</button>
+            </form>
+        </section>
+
+        <div class="container">
+            <!-- Category Navigation -->
+            <section>
+                <div class="section-title">
+                    <h2>热门配件分类</h2>
+                    <p>根据功能与用途快速定位所需附件</p>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon">🔌</div>
+                        <h3>辅助触头</h3>
+                        <p>用于信号反馈、电气联锁及控制回路，提供常开与常闭触点。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">⚡</div>
+                        <h3>分合闸线圈</h3>
+                        <p>电磁操作核心部件，实现断路器的自动分闸与合闸动作。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🔋</div>
+                        <h3>储能弹簧</h3>
+                        <p>提供操作机构的能量，确保断路器合闸速度与稳定性。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🛡️</div>
+                        <h3>欠压脱扣器</h3>
+                        <p>防止电源电压异常波动导致设备误动作或损坏的安全保护装置。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Content Area -->
+            <div class="info-grid">
+                <article class="article-list">
+                    <div class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+                        <h2>最新技术文章</h2>
+                    </div>
+
+                    <article class="article-card">
+                        <div class="article-thumb">
+                            <img src="https://picsum.photos/seed/elec1/300/200" alt="辅助触头接线示意图">
+                        </div>
+                        <div class="article-content">
+                            <h3><a href="#">断路器辅助触头的接线原理与常见故障分析</a></h3>
+                            <p>辅助触头是断路器控制回路的关键信号源。本文详细解析常开、常闭触点的逻辑关系，并提供接线图示与故障排查步骤。</p>
+                            <div class="article-meta">发布时间：2023-10-24 | 分类：接线指南</div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-thumb">
+                            <img src="https://picsum.photos/seed/elec2/300/200" alt="分合闸线圈测试">
+                        </div>
+                        <div class="article-content">
+                            <h3><a href="#">分合闸线圈吸合不顺畅的原因及维修建议</a></h3>
+                            <p>线圈发热、吸力不足是常见问题。本文从阻抗、铁芯清洁度及电源电压稳定性三个维度进行深度剖析。</p>
+                            <div class="article-meta">发布时间：2023-10-18 | 分类：维修保养</div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-thumb">
+                            <img src="https://picsum.photos/seed/elec3/300/200" alt="储能机构结构">
+                        </div>
+                        <div class="article-content">
+                            <h3><a href="#">储能弹簧机构的预储能原理与操作要点</a></h3>
+                            <p>理解储能弹簧机构的工作周期，掌握预储能检测方法，确保断路器在短路故障时能迅速脱扣。</p>
+                            <div class="article-meta">发布时间：2023-10-12 | 分类：机构原理</div>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="sidebar">
+                    <h3>热门配件型号</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">3TB47 01-0AL4 (辅助触头)</a></li>
+                        <li><a href="#">3TF50 0AL1 (分合闸线圈)</a></li>
+                        <li><a href="#">TC25 021-0 (辅助触头)</a></li>
+                        <li><a href="#">EV100-2 (欠压脱扣器)</a></li>
+                        <li><a href="#">S4B460 (辅助开关)</a></li>
+                        <li><a href="#">V12-25 (分励脱扣器)</a></li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem;">选型工具</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">电压匹配计算器</a></li>
+                        <li><a href="#">电流容量查询表</a></li>
+                        <li><a href="#">安装孔距对照</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Comparison Table -->
+            <section class="comparison-section">
+                <div class="section-title">
+                    <h2>核心附件功能对比</h2>
+                    <p>不同类型附件在功能与适用场景上的差异</p>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>附件名称</th>
+                                <th>主要功能</th>
+                                <th>常见应用场景</th>
+                                <th>注意事项</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>辅助触头</strong></td>
+                                <td>状态信号传输、电气联锁</td>
+                                <td>主开关与辅开关的互锁控制</td>
+                                <td>需确认额定电压与电流，接线端子需紧固</td>
+                            </tr>
+                            <tr>
+                                <td><strong>分励脱扣器</strong></td>
+                                <td>远程分闸（需外部电源）</td>
+                                <td>远程控制、紧急跳闸</td>
+                                <td>接线端子易氧化，需定期检查通断</td>
+                            </tr>
+                            <tr>
+                                <td><strong>欠压脱扣器</strong></td>
+                                <td>电压低于设定值时自动分闸</td>
+                                <td>保护变压器、重要负荷</td>
+                                <td>必须接在主电路电源上，严禁短接</td>
+                            </tr>
+                            <tr>
+                                <td><strong>储能弹簧</strong></td>
+                                <td>提供操作能量</td>
+                                <td>万能式断路器（ACB）</td>
+                                <td>严禁私自拆卸，防止飞弹伤人</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq-section">
+                <div class="section-title">
+                    <h2>常见问题 (FAQ)</h2>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">辅助触头与辅助开关有什么区别？</div>
+                    <div class="faq-answer">在断路器行业术语中，两者通常指代同一类产品，即安装在断路器操作机构上的小型开关组件，用于提供常开（NO）和常闭（NC）的辅助触点信号。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">分合闸线圈如何接线？</div>
+                    <div class="faq-answer">分合闸线圈通常有两个接线端子（A1, A2）。A1接电源正极（或控制回路火线），A2接电源负极（或零线）。合闸线圈和分闸线圈不能同时通电，否则会烧毁线圈。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">为什么断路器储能不到位无法合闸？</div>
+                    <div class="faq-answer">这通常是由于储能电机故障、机械卡滞、储能弹簧疲劳或微动开关接触不良引起的。建议检查电机运转声音及机械传动部分。</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>电配通电气配件</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem; line-height: 1.6;">
+                    专注于为电气工程师、维修人员及采购人员提供准确的断路器配件选型与技术服务。致力于提升配电系统的可靠性与安全性。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">产品中心</a></li>
+                    <li><a href="#">技术文档</a></li>
+                    <li><a href="#">联系合作</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>配件分类</h4>
+                <ul>
+                    <li><a href="#">控制类附件</a></li>
+                    <li><a href="#">保护类附件</a></li>
+                    <li><a href="#">操作类附件</a></li>
+                    <li><a href="#">机械类附件</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="#">咨询热线：400-123-4567</a></li>
+                    <li><a href="#">电子邮箱：support@elecparts.com</a></li>
+                    <li><a href="#">工作时间：周一至周五 9:00-18:00</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 电配通电气配件服务平台 版权所有 | 本页面内容仅供参考，具体参数请以实物及原厂说明书为准。</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Interaction
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+                          </html>
