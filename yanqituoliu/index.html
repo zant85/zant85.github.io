@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专注于烟气脱硫工程解决方案，提供石灰石-石膏湿法脱硫、半干法脱硫、氨法脱硫及除尘脱硝一体化工程设计、施工与运营服务。">
+    <meta name="keywords" content="烟气脱硫工程,脱硫塔设计,湿法脱硫,环保工程,除尘脱硝一体化">
+    <title>烟气脱硫工程-工业废气净化解决方案与工程案例</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c7a7b;
+            --primary-dark: #234e52;
+            --accent-color: #ed8936;
+            --text-main: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 122, 123, 0.9), rgba(35, 78, 82, 0.85)), url('https://picsum.photos/seed/factory/1920/800') no-repeat center center/cover;
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #dd6b20;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: var(--bg-light);
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Solutions Section */
+        .solutions {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(44, 122, 123, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--bg-light);
+            padding: 80px 0;
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--border-color);
+            z-index: 0;
+        }
+
+        .step {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            flex: 1;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--white);
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .step h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            padding: 0 10px;
+        }
+
+        /* Case Studies */
+        .cases {
+            padding: 80px 0;
+        }
+
+        .case-card {
+            display: flex;
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .case-img {
+            width: 40%;
+            min-height: 250px;
+            background-color: #cbd5e0;
+        }
+
+        .case-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .case-content {
+            padding: 30px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .case-tag {
+            display: inline-block;
+            background-color: rgba(44, 122, 123, 0.1);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .case-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .case-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .spec-item strong {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .spec-item span {
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-light);
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            margin-bottom: 15px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+            color: var(--text-light);
+        }
+
+        .faq-answer p {
+            padding-bottom: 20px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .info-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-icon {
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            color: var(--text-main);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(44, 122, 123, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            padding: 60px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            border-top: 1px solid #2d3748;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-steps {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .process-steps::before {
+                display: none;
+            }
+
+            .step {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                text-align: left;
+            }
+
+            .step-number {
+                margin-bottom: 0;
+            }
+
+            .case-card {
+                flex-direction: column;
+            }
+
+            .case-img {
+                width: 100%;
+                height: 200px;
+            }
+
+            .case-content {
+                width: 100%;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .header-inner {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.74 5.88a6 6 0 0 1-8.48 8.48A6 6 0 0 1 5.26 8.57L12 2.69z"></path>
+                    <path d="M12 22.31a6 6 0 0 1-5.74-4.13"></path>
+                    <path d="M12 22.31a6 6 0 0 0 5.74-4.13"></path>
+                </svg>
+                <div>
+                    <span>净尘</span>环保
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#solutions">脱硫技术</a></li>
+                    <li><a href="#cases">工程案例</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">获取方案</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>专业的烟气脱硫工程解决方案</h1>
+                <p>致力于为电力、钢铁、化工等行业提供高效、低耗的工业废气治理技术，确保排放达到国家超低排放标准。</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">咨询工程师</a>
+                    <a href="#solutions" class="btn btn-outline">了解技术</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>完成工程项目</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>脱硫效率达标</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15年</h3>
+                    <p>行业经验积累</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24h</h3>
+                    <p>快速响应服务</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <h2>核心技术方案</h2>
+                    <p>针对不同工况和排放标准，提供定制化的烟气脱硫工程设计与设备选型。</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3>石灰石-石膏湿法</h3>
+                        <p>目前应用最广泛的脱硫工艺，技术成熟，脱硫效率高，适合大型燃煤机组及工业锅炉，能有效去除SO₂及部分颗粒物。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3>半干法脱硫技术</h3>
+                        <p>利用喷雾干燥塔进行反应，工艺流程短，投资和运行成本较低，适合中小型锅炉及对湿法占地有严格限制的场合。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3>氨法脱硫技术</h3>
+                        <p>以氨水为吸收剂，脱硫产物可回收为硫酸铵化肥，实现资源化利用，特别适用于高浓度SO₂废气处理。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                        </div>
+                        <h3>除尘脱硝一体化</h3>
+                        <p>结合静电除尘器与脱硫塔，实现多污染物协同治理，减少设备占地面积，降低系统阻力，提升整体环保效益。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>脱硫塔结构优化</h3>
+                        <p>采用CFD流体力学模拟优化塔内流场，降低压降，防止偏流，延长喷嘴和除雾器寿命，确保长期稳定运行。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>环保合规咨询</h3>
+                        <p>提供从环评对接、排放标准解读到竣工验收的一站式咨询服务，帮助企业规避环保风险，顺利通过验收。</p>
+                        <a href="#contact" class="card-link">查看详情 &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>工程实施流程</h2>
+                    <p>标准化的项目管理流程，确保每一个烟气脱硫工程高效、安全、按时交付。</p>
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>现场勘察</h4>
+                        <p>深入工厂现场，分析烟气成分、温度、流量及现场空间布局。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>方案设计</h4>
+                        <p>结合工况数据，出具脱硫工艺流程图、设备清单及初步报价。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>施工安装</h4>
+                        <p>经验丰富的施工团队进行现场安装，严格把控质量与安全。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>调试运行</h4>
+                        <p>设备调试，参数优化，直至达到设计脱硫效率并交付使用。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Section -->
+        <section id="cases" class="cases">
+            <div class="container">
+                <div class="section-header">
+                    <h2>工程案例展示</h2>
+                    <p>真实案例见证我们的实力，涵盖电力、钢铁、化工等多个行业领域。</p>
+                </div>
+                
+                <article class="case-card">
+                    <div class="case-img">
+                        <img src="https://picsum.photos/seed/powerplant/800/600" alt="某电厂脱硫工程">
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">电力行业</span>
+                        <h3>某大型火力发电厂脱硫系统改造工程</h3>
+                        <p>针对600MW机组进行增容改造，采用双塔串联工艺，有效解决了烟气含硫量波动大的难题，脱硫效率稳定在99.5%以上。</p>
+                        <div class="specs">
+                            <div class="spec-item"><strong>处理气量</strong><span>100万 m³/h</span></div>
+                            <div class="spec-item"><strong>SO₂去除率</strong><span>≥99.5%</span></div>
+                            <div class="spec-item"><strong>工艺类型</strong><span>石灰石-石膏湿法</span></div>
+                            <div class="spec-item"><strong>投运时间</strong><span>2023年</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="case-card">
+                    <div class="case-img">
+                        <img src="https://picsum.photos/seed/steel/800/600" alt="钢铁厂脱硫">
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">钢铁行业</span>
+                        <h3>钢铁烧结机烟气脱硫除尘一体化项目</h3>
+                        <p>为高炉煤气净化系统配套半干法脱硫塔，结合脉冲布袋除尘器，实现了烟尘和SO₂的超低排放，大幅降低了厂区粉尘污染。</p>
+                        <div class="specs">
+                            <div class="spec-item"><strong>处理气量</strong><span>30万 m³/h</span></div>
+                            <div class="spec-item"><strong>颗粒物排放</strong><span>&lt;10mg/m³</span></div>
+                            <div class="spec-item"><strong>工艺类型</strong><span>半干法脱硫+布袋除尘</span></div>
+                            <div class="spec-item"><strong>投运时间</strong><span>2022年</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于烟气脱硫工程的常见疑问与解答，帮助您快速了解项目细节。</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">脱硫工程的造价大概是多少？</div>
+                        <div class="faq-answer">
+                            <p>脱硫工程造价受处理气量、烟气成分、脱硫效率要求、场地条件及工艺选择影响较大。一般湿法脱硫造价相对较高，半干法及干法较低。建议您提供具体工况数据，以便我们为您提供准确的报价方案。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">如何判断脱硫塔的运行效率？</div>
+                        <div class="faq-answer">
+                            <p>主要通过监测进出口烟气中二氧化硫（SO₂）的浓度差来计算脱硫效率。同时，还需关注浆液循环泵电流、pH值、液气比等运行参数是否在正常范围内，以及石膏浆液品质是否合格。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">半干法脱硫和湿法脱硫哪个好？</div>
+                        <div class="faq-answer">
+                            <p>两者各有优劣。湿法脱硫效率高、技术成熟，但占地面积大、有废水产生；半干法脱硫占地小、无废水排放，但除硫效率略低于湿法。选择哪种工艺应根据现场空间、环保排放标准及经济成本综合考量。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">脱硫系统运行维护需要注意什么？</div>
+                        <div class="faq-answer">
+                            <p>需定期检查喷嘴磨损情况，清理除雾器防止堵塞；定期排放石膏浆液，防止结晶；监测浆液pH值并调整石灰石浆液供给量；注意设备防腐防磨，确保系统长期稳定运行。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>立即咨询您的专属方案</h2>
+                        <p>无论您是需要新建脱硫工程，还是现有设备升级改造，我们的技术团队都将竭诚为您服务。欢迎拨打热线或填写表单。</p>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-icon">📍</span>
+                                <div>
+                                    <strong>公司地址</strong>
+                                    <p>中国·某市高新技术开发区环保产业园A栋</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon">📞</span>
+                                <div>
+                                    <strong>联系电话</strong>
+                                    <p>400-123-4567</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon">✉️</span>
+                                <div>
+                                    <strong>电子邮箱</strong>
+                                    <p>service@clean-dust.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <form onsubmit="event.preventDefault(); alert('感谢您的留言，我们将尽快与您联系！');">
+                            <div class="form-group">
+                                <label for="name">您的姓名</label>
+                                <input type="text" id="name" placeholder="请输入姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">企业名称</label>
+                                <input type="text" id="company" placeholder="请输入企业名称">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">联系电话</label>
+                                <input type="tel" id="phone" placeholder="请输入联系电话" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">需求描述</label>
+                                <textarea id="message" rows="4" placeholder="请简单描述您的脱硫工程需求..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">提交咨询</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>净尘环保</h3>
+                    <p>专注于工业烟气脱硫、脱硝及除尘一体化工程解决方案，致力于打造绿色、清洁的工业生产环境。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#solutions">技术方案</a></li>
+                        <li><a href="#cases">工程案例</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>服务领域</h4>
+                    <ul>
+                        <li><a href="#">电力行业</a></li>
+                        <li><a href="#">钢铁行业</a></li>
+                        <li><a href="#">化工行业</a></li>
+                        <li><a href="#">水泥行业</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">行业资讯</a></li>
+                        <li><a href="#">技术博客</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 净尘环保工程有限公司 版权所有 | 仅供展示使用</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+                          </html>
