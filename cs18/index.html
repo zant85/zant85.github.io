@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS1.8下载 - 提供最新、最安全的CS1.8（反恐精英1.8）客户端下载资源，包含中文版、整合包、地图插件及详细安装教程。支持Win10/Win11系统，解决兼容性问题。">
+    <meta name="keywords" content="cs1.8下载,反恐精英1.8,CS1.8整合包,CS1.8中文版,CS1.8客户端下载">
+    <title>CS1.8下载-经典反恐精英1.8客户端与资源站</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --primary-dark: #b71c1c;
+            --accent-color: #ffd700;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border-color: #333;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/cstrike/1600/600') no-repeat center center/cover;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #ddd;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: background-color 0.2s, transform 0.1s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 12px;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit) 60px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        /* Download Card */
+        .download-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .download-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .download-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .download-meta span::before {
+            content: "•";
+            margin-right: 8px;
+            color: var(--accent-color);
+        }
+
+        .download-meta span:first-child::before {
+            content: "";
+        }
+
+        .download-desc {
+            color: #bbb;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+        /* Version List */
+        .version-list {
+            list-style: none;
+        }
+
+        .version-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            margin-bottom: 12px;
+            padding: 16px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.2s;
+        }
+
+        .version-item:hover {
+            border-color: var(--primary-color);
+        }
+
+        .version-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .version-details p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .version-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            border-radius: 4px;
+        }
+
+        .btn-secondary {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #444;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .feature-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* FAQ Section */
+        .faq-list {
+            list-style: none;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 16px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255,255,255,0.02);
+        }
+
+        .faq-question:hover {
+            background-color: rgba(255,255,255,0.05);
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: none;
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-item.active .faq-question::before {
+            content: "+";
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sidebar-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .hot-list li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .hot-list a {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+
+        .hot-list a span {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .hot-list a:hover span {
+            color: var(--primary-color);
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background-color: rgba(211, 47, 47, 0.1);
+            border: 1px solid var(--primary-color);
+            color: #ff8a80;
+            padding: 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+            }
+
+            nav ul {
+                margin-top: 12px;
+                gap: 16px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                height: 300px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .download-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .download-meta {
+                justify-content: center;
+            }
+
+            .download-desc {
+                margin-bottom: 24px;
+            }
+
+            .version-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .version-actions {
+                width: 100%;
+            }
+
+            .version-actions .btn {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">CS1.8<span>下载</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">客户端下载</a></li>
+                    <li><a href="#">地图插件</a></li>
+                    <li><a href="#">教程指南</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>重温经典：CS1.8 服务器版</h1>
+                <p>为您精选最新、最稳定的CS1.8整合包。内置中文语音、强力防作弊插件、全屏优化补丁，完美适配Windows 10/11系统。</p>
+                <div>
+                    <a href="#download" class="btn">立即下载</a>
+                    <a href="#guide" class="btn btn-outline">安装教程</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Left Content -->
+            <div class="content">
+                <section id="download">
+                    <div class="section-header">
+                        <h2 class="section-title">最新版本下载</h2>
+                    </div>
+
+                    <div class="warning-box">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <p>本站提供的CS1.8版本已经过杀毒扫描，请放心下载。下载后请勿直接覆盖原版文件，建议使用专门的CS1.8文件夹运行。</p>
+                    </div>
+
+                    <div class="download-card">
+                        <div class="download-info">
+                            <h2>CS1.8 经典整合版 <span class="badge">推荐</span></h2>
+                            <div class="download-meta">
+                                <span>版本：2023.10.24</span>
+                                <span>大小：580 MB</span>
+                                <span>系统：Win7/Win10/Win11</span>
+                            </div>
+                            <p class="download-desc">
+                                包含完整游戏本体、中文语音包、Steam免验证补丁、强力防作弊系统以及常用插件。修复了原版在Win10上无法全屏的问题，优化了帧数表现。
+                            </p>
+                            <div class="version-actions">
+                                <a href="#" class="btn" onclick="startDownload(event)">高速下载</a>
+                                <a href="#" class="btn btn-secondary" onclick="showMirror(event)">备用下载</a>
+                            </div>
+                        </div>
+                        <div style="font-size: 4rem; color: var(--border-color); opacity: 0.5;">
+                            <svg width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 30px 0 15px; color: var(--text-main);">其他版本选择</h3>
+                    <ul class="version-list">
+                        <li class="version-item">
+                            <div class="version-details">
+                                <h3>CS1.8 简易精简版</h3>
+                                <p>体积小，启动快，适合配置较低的电脑。</p>
+                            </div>
+                            <div class="version-actions">
+                                <a href="#" class="btn btn-sm btn-secondary">下载</a>
+                            </div>
+                        </li>
+                        <li class="version-item">
+                            <div class="version-details">
+                                <h3>CS1.8 原版服务器版</h3>
+                                <p>仅包含官方更新，无插件，无修改，纯净体验。</p>
+                            </div>
+                            <div class="version-actions">
+                                <a href="#" class="btn btn-sm btn-secondary">下载</a>
+                            </div>
+                        </li>
+                        <li class="version-item">
+                            <div class="version-details">
+                                <h3>CS1.8 超级整合包 V3</h3>
+                                <p>包含大量新地图、新枪模、强力插件。</p>
+                            </div>
+                            <div class="version-actions">
+                                <a href="#" class="btn btn-sm btn-secondary">下载</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="features">
+                    <div class="section-header">
+                        <h2 class="section-title">版本特色</h2>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>强力防作弊</h3>
+                            <p>内置反作弊插件，有效减少外挂干扰，提升游戏公平性。</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🗣️</div>
+                            <h3>中文语音包</h3>
+                            <p>自动集成中文语音，无需额外下载，听声辨位更方便。</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🖥️</div>
+                            <h3>全屏优化</h3>
+                            <p>自动修复Win10/11下黑屏、无法全屏等兼容性问题。</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎮</div>
+                            <h3>操作优化</h3>
+                            <p>优化键位设置，支持准星辅助，提升射击手感。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="guide">
+                    <div class="section-header">
+                        <h2 class="section-title">安装教程</h2>
+                    </div>
+                    <div style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <ol style="padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                            <li>下载并解压 <strong>CS1.8_整合版.zip</strong> 文件夹。</li>
+                            <li>进入解压后的文件夹，找到 <strong>setup.exe</strong> 安装程序并运行。</li>
+                            <li>安装路径建议选择非C盘（如 D:\CS1.8），点击“下一步”完成安装。</li>
+                            <li>安装完成后，桌面会自动生成“CS1.8”快捷方式。</li>
+                            <li>首次运行可能会提示缺少文件，请确保网络连接正常，等待游戏自动更新资源。</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="faq">
+                    <div class="section-header">
+                        <h2 class="section-title">常见问题 (FAQ)</h2>
+                    </div>
+                    <ul class="faq-list">
+                        <li class="faq-item active">
+                            <div class="faq-question">CS1.8可以在Win11上运行吗？</div>
+                            <div class="faq-answer">可以。本站提供的整合版已针对Win10和Win11系统进行了兼容性修复，只要安装了必要的DirectX组件即可正常运行。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question">下载速度慢怎么办？</div>
+                            <div class="faq-answer">请尝试点击“备用下载”按钮，或者使用迅雷等下载工具进行多线程下载。我们提供了多个CDN节点供您选择。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question">游戏启动后闪退怎么办？</div>
+                            <div class="faq-answer">请检查显卡驱动是否为最新版本。如果是Win11系统，请尝试以管理员身份运行游戏。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question">如何连接到朋友的服务器？</div>
+                            <div class="faq-answer">进入游戏后，按 ` (波浪号键) 打开控制台，输入 connect IP地址:端口，然后回车即可连接。</div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside>
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">热门下载</h3>
+                    <ul class="hot-list">
+                        <li>
+                            <a href="#">CS1.8 穿越火线地图包 <span>2.3w</span></a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 大灾变地图 <span>1.8w</span></a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 佣兵突击地图 <span>1.5w</span></a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 降龙传说地图 <span>1.2w</span></a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 游戏内语音包 <span>9800</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">游戏工具</h3>
+                    <ul class="hot-list">
+                        <li>
+                            <a href="#">CS1.8 Steam免验证补丁</a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 全屏强制补丁</a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 游戏截图工具</a>
+                        </li>
+                        <li>
+                            <a href="#">CS1.8 语音转文字插件</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">服务器列表</h3>
+                    <ul class="hot-list">
+                        <li>
+                            <a href="#">[CN] 经典竞技服 #1 <span>在线</span></a>
+                        </li>
+                        <li>
+                            <a href="#">[CN] 混战娱乐服 #2 <span>在线</span></a>
+                        </li>
+                        <li>
+                            <a href="#">[CN] 休闲爆破服 #3 <span>在线</span></a>
+                        </li>
+                        <li>
+                            <a href="#">[CN] 枪战生存服 #5 <span>在线</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">免责声明</a>
+                <a href="#">版权声明</a>
+                <a href="#">联系站长</a>
+            </div>
+            <p>本站资源仅供学习交流使用，请于下载后24小时内删除。</p>
+            <p>&copy; 2023 CS1.8下载站 版权所有</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Simple Download Interaction
+        function startDownload(e) {
+            e.preventDefault();
+            const btn = e.target;
+            const originalText = btn.innerText;
+            btn.innerText = "正在连接服务器...";
+            btn.style.backgroundColor = "#555";
+            
+            setTimeout(() => {
+                btn.innerText = "下载已开始";
+                btn.style.backgroundColor = "#2e7d32";
+                // Simulate a download start
+                console.log("Download started for CS1.8");
+            }, 1000);
+        }
+
+        function showMirror(e) {
+            e.preventDefault();
+            const btn = e.target;
+            const originalText = btn.innerText;
+            btn.innerText = "备用源加载中...";
+            btn.style.backgroundColor = "#555";
+            
+            setTimeout(() => {
+                btn.innerText = "备用下载";
+                btn.style.backgroundColor = "#333";
+                // In a real scenario, this would change the download link
+                alert("备用下载源即将上线，请稍后再试。");
+            }, 800);
+        }
+    </script>
+</body>
+</html>
