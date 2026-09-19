@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artec 3D扫描仪官网首页。提供专业级3D扫描解决方案，涵盖手持扫描仪、工业扫描仪及3D打印服务。了解Artec Eva、Leo等型号功能、应用领域及价格，获取3D建模与逆向工程技术支持。">
+    <meta name="keywords" content="artec三维扫描仪, Artec 3D扫描仪, 3D扫描仪价格, 手持3D扫描仪, 工业3D扫描, 逆向工程, 3D建模">
+    <title>Artec 3D扫描仪-专业级三维数字化解决方案与设备评测</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --accent-color: #00a8e8;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f8f9fa;
+            --text-main: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .hero-text h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero-text p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent-color);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Models Section */
+        .models {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .model-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .model-img-wrapper {
+            height: 220px;
+            overflow: hidden;
+            background-color: #ddd;
+        }
+
+        .model-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .model-card:hover .model-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .model-info {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .model-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: #e3f2fd;
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .model-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .model-info p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .model-specs {
+            margin-top: auto;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        /* Applications Section */
+        .applications {
+            padding: 80px 0;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .app-item {
+            position: relative;
+            height: 250px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .app-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .app-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .app-overlay {
+            position: relative;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            width: 100%;
+            padding: 20px;
+            color: var(--white);
+            z-index: 1;
+        }
+
+        .app-overlay h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+        }
+
+        .faq-answer p {
+            padding-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h2 {
+            color: var(--white);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                padding: 20px;
+                box-shadow: var(--shadow-md);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                Artec 3D
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#models">扫描仪型号</a>
+                <a href="#solutions">行业解决方案</a>
+                <a href="#applications">应用领域</a>
+                <a href="#faq">常见问题</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 8px 20px;">联系销售</a>
+            </nav>
+            <div class="mobile-menu-btn" id="menuBtn">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>重新定义 <br><span>三维数字化</span> 体验</h1>
+                    <p>Artec 3D 扫描仪为您提供从快速原型制作到精密工业检测的全流程解决方案。高精度、高效率，让复杂物体数字化变得前所未有的简单。</p>
+                    <div class="hero-buttons">
+                        <a href="#models" class="btn btn-primary">探索设备</a>
+                        <a href="#solutions" class="btn btn-outline">查看案例</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/seed/tech3d/600/400" alt="Artec 3D扫描仪工作场景">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">为什么选择 Artec 3D？</h2>
+                <p class="section-subtitle">我们致力于通过先进的硬件与软件结合，打破3D扫描的技术门槛，为全球用户提供可靠的数字化工具。</p>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>极速扫描</h3>
+                        <p>得益于先进的深度感应技术和实时处理算法，Artec 扫描仪能够在几秒钟内完成物体扫描，无需复杂的校准过程。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>超高精度</h3>
+                        <p>从毫米级到微米级，无论是小型珠宝还是大型机械部件，都能提供符合工业标准的点云数据质量。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>一键建模</h3>
+                        <p>内置智能软件，扫描完成后即可自动生成高精度的网格模型和点云数据，直接对接主流3D设计软件。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Models Section -->
+        <section class="models" id="models">
+            <div class="container">
+                <h2 class="section-title">热门扫描仪型号</h2>
+                <p class="section-subtitle">根据您的具体需求，选择最适合的设备类型。</p>
+                <div class="model-grid">
+                    <!-- Model 1 -->
+                    <div class="model-card">
+                        <div class="model-img-wrapper">
+                            <img src="https://picsum.photos/seed/arthec_eva/400/300" alt="Artec Eva 3D扫描仪">
+                        </div>
+                        <div class="model-info">
+                            <span class="model-tag">旗舰推荐</span>
+                            <h3>Artec Eva</h3>
+                            <p>最适合一般工业检测与艺术品数字化。体积小巧，精度高达 0.1mm，支持复杂曲面与精细结构。</p>
+                            <div class="model-specs">
+                                <div class="spec-item"><span>扫描精度</span><span>0.1 mm</span></div>
+                                <div class="spec-item"><span>扫描速度</span><span>高</span></div>
+                                <div class="spec-item"><span>适用场景</span><span>工业检测、文物</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model 2 -->
+                    <div class="model-card">
+                        <div class="model-img-wrapper">
+                            <img src="https://picsum.photos/seed/arthec_leo/400/300" alt="Artec Leo 3D扫描仪">
+                        </div>
+                        <div class="model-info">
+                            <span class="model-tag">户外首选</span>
+                            <h3>Artec Leo</h3>
+                            <p>首款完全免后处理的手持3D扫描仪。内置电池供电，无需连接电脑，直接在现场获取高质量3D数据。</p>
+                            <div class="model-specs">
+                                <div class="spec-item"><span>扫描精度</span><span>0.05 mm</span></div>
+                                <div class="spec-item"><span>续航时间</span><span>4小时+</span></div>
+                                <div class="spec-item"><span>适用场景</span><span>建筑、汽车、户外</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model 3 -->
+                    <div class="model-card">
+                        <div class="model-img-wrapper">
+                            <img src="https://picsum.photos/seed/arthec_sky/400/300" alt="Artec Sky 3D扫描仪">
+                        </div>
+                        <div class="model-info">
+                            <span class="model-tag">大场景</span>
+                            <h3>Artec Sky</h3>
+                            <p>专为大型物体与建筑结构设计。拥有广角镜头和3D扫描头，可轻松应对建筑物、雕塑和大型机械。</p>
+                            <div class="model-specs">
+                                <div class="spec-item"><span>扫描精度</span><span>0.5 - 1.0 mm</span></div>
+                                <div class="spec-item"><span>扫描范围</span><span>大</span></div>
+                                <div class="spec-item"><span>适用场景</span><span>建筑、考古、土木</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="applications" id="applications">
+            <div class="container">
+                <h2 class="section-title">广泛的应用领域</h2>
+                <p class="section-subtitle">Artec 3D 扫描仪已服务于全球数百万用户，涵盖从创意设计到科学研究的各个角落。</p>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <img src="https://picsum.photos/seed/medical/400/300" alt="医疗与牙科应用">
+                        <div class="app-overlay">
+                            <h4>医疗与牙科</h4>
+                            <p>牙齿矫正、义齿制作、人体解剖研究</p>
+                        </div>
+                    </div>
+                    <div class="app-item">
+                        <img src="https://picsum.photos/seed/cars/400/300" alt="汽车与工业设计">
+                        <div class="app-overlay">
+                            <h4>汽车与工业设计</h4>
+                            <p>逆向工程、碰撞测试、缺陷检测</p>
+                        </div>
+                    </div>
+                    <div class="app-item">
+                        <img src="https://picsum.photos/seed/art/400/300" alt="文化遗产保护">
+                        <div class="app-overlay">
+                            <h4>文化遗产保护</h4>
+                            <p>文物数字化存档、博物馆展示</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container faq-container">
+                <h2 class="section-title">常见问题解答</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Artec 3D扫描仪需要专业背景才能操作吗？</div>
+                    <div class="faq-answer">
+                        <p>不需要。Artec Eva 和 Leo 等型号设计有“一键扫描”功能，配合 Artec Studio 软件，非专业用户也能在短时间内上手，快速获得高质量的3D模型。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">扫描后的数据如何使用？</div>
+                    <div class="faq-answer">
+                        <p>扫描完成后，软件会直接生成点云和网格模型。您可以将其导出为 .stl, .obj, .ply 等通用格式，直接导入 Blender, SolidWorks, Rhino 或 ZBrush 等软件进行进一步处理。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">手持扫描仪适合扫描哪些类型的物体？</div>
+                    <div class="faq-answer">
+                        <p>非常适合扫描不规则曲面、有机形状、人体模型以及无法移动的大型机械部件。对于规则简单的物体，使用固定式扫描仪或摄影测量法可能效率更高。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">售后服务和技术支持包括哪些内容？</div>
+                    <div class="faq-answer">
+                        <p>我们提供全球范围内的技术支持热线、在线视频教程、定期固件更新以及专业的操作培训服务，确保您的设备始终处于最佳工作状态。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Artec 3D</h2>
+                    <p>致力于推动三维扫描技术的发展，为全球用户提供从设备到服务的全生命周期数字化解决方案。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>产品中心</h4>
+                    <ul>
+                        <li><a href="#">Artec Eva</a></li>
+                        <li><a href="#">Artec Leo</a></li>
+                        <li><a href="#">Artec Sky</a></li>
+                        <li><a href="#">配件与软件</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="#">工业检测</a></li>
+                        <li><a href="#">逆向工程</a></li>
+                        <li><a href="#">医疗与牙科</a></li>
+                        <li><a href="#">文化遗产</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：support@artec3d-demo.com</li>
+                        <li>地址：北京市朝阳区科技园区A座</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Artec 3D Solutions Demo. All rights reserved. 此页面仅为设计演示。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
