@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="家庭自制凉皮做法大全，提供正宗凉皮制作教程、调料配方、洗面筋技巧及保存方法。从面团制作到蒸制，手把手教你做出筋道爽滑的家庭版凉皮。">
+    <meta name="keywords" content="家庭自制凉皮的做法,凉皮制作教程,凉皮调料配方,洗面筋,凉拌凉皮">
+    <title>家庭自制凉皮的做法-零失败家常凉皮制作指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #f39c12;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-light: #7f8c8d;
+            --border-radius: 12px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            background-image: radial-gradient(#f3e5d8 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-tags span {
+            display: inline-block;
+            background: rgba(255,255,255,0.6);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.2rem;
+            color: var(--primary-color);
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Article Styles */
+        article {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 1rem;
+            color: var(--text-main);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2rem;
+            font-weight: bold;
+        }
+
+        .tip-box {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            color: #16a085;
+        }
+
+        .warning-box {
+            background-color: #fdedec;
+            border-left: 4px solid #e74c3c;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            color: #c0392b;
+        }
+
+        /* Ingredients & Tools */
+        .ingredients-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .ingredient-item {
+            background: #f8f9fa;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .ingredient-item strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 0.2rem;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .sidebar-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #eee;
+        }
+
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-header {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 1rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-content {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+
+        /* Utility */
+        .highlight {
+            background-color: rgba(211, 84, 0, 0.1);
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #ba4a00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path><path d="M8.5 8.5v.01"></path><path d="M16 15.5v.01"></path><path d="M12 12v.01"></path></svg>
+            悦食厨房
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">凉菜系列</a></li>
+                <li><a href="#">主食教程</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+        <h1>家庭自制凉皮的做法</h1>
+        <p>告别外面买的不卫生，掌握洗面筋技巧，在家轻松做出Q弹爽滑、香辣开胃的凉皮。</p>
+        <div class="hero-tags">
+            <span>无明矾</span>
+            <span>零失败</span>
+            <span>口感筋道</span>
+            <span>正宗陕西味</span>
+        </div>
+        <a href="#ingredients" class="btn">查看食材清单</a>
+    </div>
+</div>
+
+<main class="container content-grid">
+    <article>
+        <h2>凉皮制作核心原理</h2>
+        <p>凉皮之所以口感筋道，是因为面粉中的面筋成分在洗面过程中分离出来，形成了网状结构。家庭自制凉皮主要分为两个部分：<strong>洗面（提取淀粉）</strong>和<strong>蒸制（制作面皮）</strong>。</p>
+        
+        <h3>1. 准备工作与工具</h3>
+        <p>制作凉皮并不需要昂贵的设备。你需要一个大盆用于和面和洗面，一个漏勺，一个平底盘子（用于刷油铺面皮），以及蒸锅。</p>
+        <div class="tip-box">
+            <strong>小贴士：</strong> 盘子最好是不粘的，或者提前在盘底薄薄刷一层油（建议使用植物油，如玉米油或葵花籽油），防止面皮粘连。
+        </div>
+
+        <h3>2. 面团制作与洗面步骤</h3>
+        <ol class="step-list">
+            <li><strong>和面：</strong> 取中筋面粉（普通面粉即可）300克，加入凉水约150克（根据面粉吸水性调整）。搅拌成絮状后，揉成光滑的面团。盖上保鲜膜醒发30分钟。</li>
+            <li><strong>洗面：</strong> 将醒好的面团放入盆中，加入足量的清水。用手轻轻揉搓面团，洗出淀粉水，直到水变浑浊。将浑浊的水倒入另一个盆中，重复这个过程3-4次，直到洗出的水变清，剩下的硬块就是<strong>面筋</strong>。</li>
+            <li><strong>沉淀：</strong> 将洗好的淀粉水静置放置4-6小时（甚至过夜），让淀粉沉淀到底部，倒掉上面浮着的清水。你会看到沉淀好的面糊像酸奶一样浓稠。</li>
+        </ol>
+
+        <h3>3. 蒸制凉皮</h3>
+        <ol class="step-list">
+            <li><strong>搅拌面糊：</strong> 在沉淀好的面糊中加入少许盐（约2克），搅拌均匀，这样蒸出来的凉皮更有筋性。</li>
+            <li><strong>舀入面糊：</strong> 平底盘子放入蒸锅加热。舀一勺面糊倒入盘中，快速转动盘子，让面糊均匀铺满盘底（厚度约2毫米）。</li>
+            <li><strong>蒸制：</strong> 水开后，将盘子放入蒸锅，盖上盖子蒸2-3分钟，直到面皮表面出现大气泡，边缘微微翘起。</li>
+            <li><strong>冷却与揭皮：</strong> 取出盘子，迅速放入冷水盆中降温。冷却后，用刮板将凉皮从盘子上揭下来。刷一层油防止粘连，重复上述步骤直到面糊用完。</li>
+        </ol>
+
+        <h3>4. 煮面筋</h3>
+        <p>将洗好的面筋放入蒸锅蒸20分钟，取出切块备用。</p>
+
+        <h2>灵魂调料配方</h2>
+        <p>凉皮好不好吃，全看调料。推荐使用<strong>蒜水</strong>和<strong>油泼辣子</strong>。</p>
+        <div class="ingredients-list">
+            <div class="ingredient-item">
+                <strong>蒜水</strong>
+                <p>大蒜捣碎，用温水浸泡30分钟，过滤掉渣滓。</p>
+            </div>
+            <div class="ingredient-item">
+                <strong>油泼辣子</strong>
+                <p>辣椒面+白芝麻+十三香+盐，热油泼香。</p>
+            </div>
+            <div class="ingredient-item">
+                <strong>芝麻酱</strong>
+                <p>用香油将芝麻酱稀释开。</p>
+            </div>
+        </div>
+        <p>将切好的凉皮、面筋放入碗中，加入生抽、醋、蒜水、辣椒油、盐、糖、芝麻酱，拌匀即可食用。</p>
+    </article>
+
+    <aside>
+        <div class="sidebar-card" id="ingredients">
+            <h3>📝 食材清单</h3>
+            <div class="ingredients-list">
+                <div class="ingredient-item">
+                    <strong>中筋面粉</strong>
+                    <span>300克</span>
+                </div>
+                <div class="ingredient-item">
+                    <strong>清水</strong>
+                    <span>约150克（洗面）</span>
+                </div>
+                <div class="ingredient-item">
+                    <strong>食用盐</strong>
+                    <span>2克</span>
+                </div>
+                <div class="ingredient-item">
+                    <strong>食用油</strong>
+                    <span>适量（刷盘用）</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-card">
+            <h3>❓ 常见问题 (FAQ)</h3>
+            
+            <div class="accordion-item">
+                <button class="accordion-header">洗面水沉淀后有很多水怎么办？ <span>+</span></button>
+                <div class="accordion-content">
+                    这是正常的。沉淀后，将上层的清水倒掉，只保留底部浓稠的淀粉糊。如果水分依然较多，可以静置更久或用纱布过滤。
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">凉皮吃起来发粘是怎么回事？ <span>+</span></button>
+                <div class="accordion-content">
+                    可能是面糊太稀，或者蒸制时间不够。下次制作时，面糊的稠度应像浓酸奶，蒸制时间控制在2-3分钟，取出后需迅速冷却。
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">没有平底盘子可以用什么代替？ <span>+</span></button>
+                <div class="accordion-content">
+                    可以使用不锈钢饭盒盖子，或者用锡纸折成浅盘。关键是底部要光滑且耐高温。
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-card" style="background-color: #fff8e1;">
+            <h3>💡 烹饪小贴士</h3>
+            <ul style="padding-left: 1.2rem; color: #795548;">
+                <li style="margin-bottom: 0.5rem;">洗面时水要少加，多换几次水，直到水变清。</li>
+                <li style="margin-bottom: 0.5rem;">面糊里加盐可以增加凉皮的筋道。</li>
+                <li style="margin-bottom: 0.5rem;">蒸好的凉皮及时刷油，放久了会粘在一起。</li>
+            </ul>
+        </div>
+    </aside>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-section" style="flex: 2; min-width: 300px;">
+            <h4>悦食厨房</h4>
+            <p style="color: #bdc3c7; font-size: 0.9rem;">
+                专注于分享家常美食制作教程，从凉皮、饺子到蛋糕烘焙，让烹饪变得简单有趣。
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#">凉皮做法</a></li>
+                <li><a href="#">酸辣粉教程</a></li>
+                <li><a href="#">肉夹馍制作</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>联系我们</h4>
+            <ul>
+                <li><a href="#">投稿合作</a></li>
+                <li><a href="#">意见反馈</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 悦食厨房. All Rights Reserved. 仅供学习交流使用.
+    </div>
+</footer>
+
+<script>
+    // 简单的折叠面板交互逻辑
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordions = document.querySelectorAll('.accordion-header');
+        
+        accordions.forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('span');
+                
+                // 切换当前状态
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
