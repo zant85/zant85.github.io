@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tablo 事件深度解析与回顾：涵盖 Epik High成员Tablo被指控学术造假争议始末、舆论反转过程、法律诉讼结果及对韩国嘻哈文化的深远影响。">
+    <meta name="keywords" content="Tablo事件, Tablo, Epik High, 学术造假, 韩国娱乐新闻, Tablo判决">
+    <title>Tablo事件-韩国嘻哈传奇与学术造假争议始末回顾</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a059;
+            --bg-color: #f8f8f8;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/tablo_hero/1600/900') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #b08d4b;
+        }
+
+        /* Timeline Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--border-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            justify-content: flex-start;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid #fff;
+            z-index: 2;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .quote-author {
+            margin-top: 20px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 300px;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                display: none; /* Simplified for mobile */
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                justify-content: flex-start !important;
+                padding-left: 50px;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">Tablo<span>事件</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#timeline">事件时间线</a></li>
+                    <li><a href="#details">争议详情</a></li>
+                    <li><a href="#impact">文化影响</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>韩国嘻哈传奇与学术造假争议始末回顾</h1>
+                <p>深入解析 Epik High 成员 Tablo 被指控 Stanford 大学学历造假风波，从舆论风暴到最终平反的全过程。</p>
+                <a href="#timeline" class="btn">查看事件时间线</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">事件概览</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--text-secondary);">
+                2009年，韩国流行文化圈发生了一起震惊业界的舆论风暴。知名嘻哈组合 Epik High 的队长 Tablo（本名韩承旻）被指控通过伪造履历进入斯坦福大学法学院就读。这一指控迅速在韩国社交媒体和新闻界发酵，引发了大规模的“黑Tablo”运动，甚至导致他被迫中断演艺活动。经过长达数月的调查与诉讼，最终证明指控纯属捏造，Tablo 不仅洗清了冤屈，更成为了韩国网络舆论力量的反面教材。
+            </p>
+        </section>
+
+        <section id="timeline" class="container">
+            <h2 class="section-title">关键时间线</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2009年3月</div>
+                        <h3>指控爆发</h3>
+                        <p>网络社区 8waves 指控 Tablo 曾在斯坦福大学获得学士学位，并声称其生父身份存疑。随后各大媒体跟进报道，舆论迅速转向。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2009年4月</div>
+                        <h3>被迫中断活动</h3>
+                        <p>由于巨大的舆论压力，Tablo 被迫暂停 Epik High 的所有演艺活动，并宣布无限期休止团务，仅以个人名义发表声明。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2009年7月</div>
+                        <h3>提起诉讼</h3>
+                        <p>Tablo 向首尔中央地方法院提起诉讼，起诉指控者散布诽谤言论，要求公开道歉并赔偿精神损失。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2009年10月</div>
+                        <h3>法庭辩论</h3>
+                        <p>Tablo 在法庭上提交了斯坦福大学官方文件作为证据。经过激烈的辩论，法院初步驳回了指控者的部分主张。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010年8月</div>
+                        <h3>最终判决</h3>
+                        <p>首尔中央地方法院宣判，认定指控内容缺乏事实依据，Tablo 胜诉。指控者被判向 Tablo 公开道歉并赔偿。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <p class="quote-text">“在这个时代，如果你没有证据，请不要随意指指点点。真相不会永远被埋没。”</p>
+                <p class="quote-author">— Tablo 对此事件的反思</p>
+            </div>
+        </section>
+
+        <section id="details" class="container">
+            <h2 class="section-title">争议焦点与调查</h2>
+            <div class="content-grid">
+                <article class="card">
+                    <img src="https://picsum.photos/seed/tablo1/400/250" alt="Stanford University Campus" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">学历调查</span>
+                        <h3>Stanford 官方背书</h3>
+                        <p>在诉讼过程中，Tablo 代理律师向法院提交了斯坦福大学官方确认的信函，详细列出了 Tablo 的入学时间、课程成绩及毕业证明，彻底粉碎了“学历造假”的谣言。</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/tablo2/400/250" alt="Internet Forum" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">网络暴力</span>
+                        <h3>网络社区的失控</h3>
+                        <p>事件起源于匿名论坛，缺乏事实根据的猜测在缺乏核实机制的网络环境下迅速病毒式传播。这起事件成为了韩国网络实名制讨论和舆论反思的重要案例。</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/tablo3/400/250" alt="Legal Process" class="card-img">
+                    <div class="card-body">
+                        <span class="card-tag">法律维权</span>
+                        <h3>法律途径的胜利</h3>
+                        <p>Tablo 团队没有选择沉默，而是通过法律手段维护权益。最终胜诉不仅是对他个人名誉的恢复，也震慑了网络造谣者。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="impact" class="container">
+            <h2 class="section-title">对韩国嘻哈文化的深远影响</h2>
+            <p style="margin-bottom: 20px;">Tablo 事件虽然是一场针对个人的诽谤案，但其后续影响波及了整个韩国娱乐产业和音乐生态。</p>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; color: var(--text-secondary);">
+                <li><strong>音乐人地位提升：</strong> Tablo 在回归后发行了专辑《Fan Letter》，销量大获成功，证明了即便在巨大的舆论压力下，优质的音乐依然能获得市场的认可。</li>
+                <li><strong>行业反思：</strong> 此事促使韩国演艺圈和媒体开始重新审视网络暴力的危害，以及在没有确凿证据前进行跟风报道的伦理问题。</li>
+                <li><strong>个人成长：</strong> Tablo 将这段经历融入到了后续的专辑创作中（如专辑《Fan Letter》中的《Epilogue》），将痛苦转化为艺术，完成了艺术家的自我救赎。</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="container">
+            <h2 class="section-title">常见问题 (FAQ)</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Tablo 真的从斯坦福大学毕业了吗？</div>
+                    <div class="faq-answer">
+                        是的，Tablo 确实毕业于斯坦福大学文理学院，主修英语文学。他在2000年入学，2002年毕业，随后进入斯坦福法学院深造。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">指控 Tablo 的人受到了什么惩罚？</div>
+                    <div class="faq-answer">
+                        根据2010年的法院判决，指控者被勒令向 Tablo 公开道歉，并赔偿了相应的精神损失费。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Epik High 在事件后是否解散？</div>
+                    <div class="faq-answer">
+                        没有。虽然 Tablo 在事件期间暂停了活动，但组合成员 DJ Tukutz 和 Mithra Jin 坚定地支持他，并在他回归后继续合作，Epik High 至今仍在活动。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tablo 事件回顾网. All Rights Reserved.</p>
+            <p>本页面旨在客观回顾历史事件，提供事实信息，非官方粉丝站点。</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 切换逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
